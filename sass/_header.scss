@@ -1,11 +1,10 @@
-h4{
-  font-size: $hfour;
-}
+
 header.accueil {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
+    background-color:$header-color-slogan;
     .header-logo {
       width: 100%;
       display: flex;
@@ -38,15 +37,16 @@ header.accueil {
         font-weight: 250;
       }
     }
-    .header-publicite h4{
+    .header-publicite h2{
       font-family: 'Roboto';
       font-weight: 500;
+      font-size:$htwo;
     }
-    .header-button{
+    /*.header-button{
       display: flex;
       justify-content: center;
       background-color:$header-color-slogan;
-      width: 100%;
+      width:100%;
       padding-top: 20px;
       padding-bottom: 30px;
     }
@@ -64,5 +64,5 @@ header.accueil {
         box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
         -webkit-box-shadow: 0px 5px 5px 0px rgba(171, 163, 163, 0.73);
         -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
-      }
-    }
+      }*/
+}

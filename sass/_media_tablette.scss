@@ -20,13 +20,13 @@
          padding:10px;
     }
              
-    .template-home section.choice-buttons{
+    .template-home div.choice-buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 5px;
     }    
-     .template-home button.section-btn{
+     .template-home div.section-btn{
             width: 40%;
             justify-content: space-around;
             flex-wrap: nowrap;

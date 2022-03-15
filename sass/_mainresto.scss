@@ -12,10 +12,7 @@ body.template-restaurant{
       object-fit: cover;
     }
 }
-
-
-
-  div.titre-main {
+div.titre-main {
     display: flex;
     justify-content: space-between;
     padding-left: 25px;
@@ -35,17 +32,8 @@ body.template-restaurant{
     .far {
       margin-top: 18px;
     }
-    .fa-heart:hover {
-      fill:#800080 !important;
-      
-    }
   }
 
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
   section > h3 {
     text-transform: uppercase;
     position: relative;
@@ -56,34 +44,93 @@ body.template-restaurant{
   }
   section > h3::after {
     position: absolute;
-    bottom: -10px;
+    bottom: -2px;
     left: 0;
     content: "";
     height: 1px;
-    width: 30px;
+    width: 40px;
     background-color: $tertaire-color;
   }
-  .entre,
-  .plats,
-  .desserts {
+  main, main div.menu {
     display: flex;
     flex-direction: column;
-    gap:7px;
-    background: #ffff;
-    width: 96%;
-    margin: 0 auto;
-    border-radius: 25px;
-    padding: 10px;
+    gap:8px;
   }
-  .entre-info-prix,
-  .plats-info-prix,
-  .desserts-info-prix {
+  section.section-entres,section.section-plats,section.section-desserts{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+  }
+  .entre,.plats,.desserts{
     display: flex;
     justify-content: space-between;
+    width: 96%;
+    margin: 0 auto;
+    background-color:white;
+    border-radius: 25px;
   }
-  .entre-info-prix p:nth-child(2),
-  .plats-info-prix p:nth-child(2),
-  .desserts-info-prix p:nth-child(2) {
+  
+   .entre-titre,.plat-titre,.dessert-titre{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    flex:80%;
+    padding:10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .entre-prix-special{
+    display: none;
+    background-color:green;
+  }
+   .entre-prix,.plat-prix,.dessert-prix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 20%;
     font-weight: bold;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    p{
+      margin-top: 25px;
+    }
   }
+  .entre-prix:hover{
+    
+    animation:test 3s ease 3s;
+    transition:500ms linear;
+    .entre-prix-special{
+      display: block;
+    }
+  }
+@keyframes test {
+  0%{
+    transform: translateX(250px);
+    background-color:$tertaire-color;
+  }
+  100%{
+  transform: translateX(0px);
+    background-color:$tertaire-color;
+  }
+}
+  
+  
+  .section-entres .entre, .section-plats .plats, .section-desserts.desserts{
+    animation: monika 2s ease 2s forwards;
+  }
+  @keyframes monika {
+    0% {
+      transform: translateY(50px);
+      opacity: 0%;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+  }
+  
+  
 }

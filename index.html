@@ -32,6 +32,10 @@
     <title>Oh my food</title>
   </head>
   <body class="template-home">
+    <!--where put loader?-->
+    <div class="opakowanie">
+      <div class="loader"></div>
+    </div>
     <header class="accueil">
       <div class="header-logo">
         <img src="images/logo/ohmyfood.png" alt="logo" />
@@ -42,37 +46,37 @@
         <p>Paris, Belleville</p>
       </div>
       <div class="header-publicite">
-        <h4>Réservez le menu qui</h4>
-        <h4>vous convient</h4>
+        <h2>Réservez le menu qui</h2>
+        <h2>vous convient</h2>
       </div>
       <div class="header-information">
         <p>Découvrez les resturants d'exception,</p>
         <p>selectioner avec le soins.</p>
       </div>
-      <div class="header-button">
-        <button>Explorer nos restaurants</button>
-      </div>
+  <!--tutaj byl div co onvelopper button z klasa .header-button-->
+        <button class="explorez">Explorer nos restaurants</button>
+      
     </header>
 
     <main>
       <h2>Fonctionnement</h2>
-      <section class="choice-buttons">
-        <button class="section-btn">
+      <div class="choice-buttons">
+        <div class="section-btn">
           <span>1</span>
           <i class="fas fa-mobile-alt"></i>
           <p> Choisissez un restaurant</p>
-        </button>
-        <button class="section-btn">
+        </div>
+        <div class="section-btn">
           <span>2</span>
           <i class="fas fa-bars"></i>
           <p>Composez votre menu</p>
-        </button>
-        <button class="section-btn">
+        </div>
+        <div class="section-btn">
           <span>3</span>
           <i class="fas fa-store"></i>
           <p> Dégustez au restaurant</p>
-        </button>
-      </section>
+        </div>
+      </div>
 
       <section class="sections-restaurant">
         <h2>Restaurants</h2>
@@ -111,7 +115,7 @@
                 <p>Charonne</p>
               </div>
               <div class="card-restaurant-symbol">
-                <p>&#128156</p>
+                <p>heart</p>
               </div>
             </div>
           </div>
@@ -172,5 +176,6 @@
         <p>Contact</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
