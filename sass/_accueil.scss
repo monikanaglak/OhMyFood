@@ -160,26 +160,40 @@
       line-height: 30px;
       z-index: 2;
     }
-    /*
-  .card-restaurant-symbol-extra{
-    position: relative;
-     .far{
-       position: absolute;
-       top:15px;
-       left:15px;
-       height: 25px;
-     }
-  }*/
     .card-restaurant-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
     .card-restaurant-info {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px;
+      position: relative;
       background-color: white;
+      padding-left: 10px;
+      border-radius: 0 0 25px 25px;
+      
+    }
+    .card-restaurant-info p{
+      padding-bottom: 15px;
+    }
+    .card-restaurant-info h3{
+      padding-top: 5px;
+    }
+    .card-restaurant-info i{
+      position: absolute;
+      top: 8px;
+      right: 25px;
+    }
+    .card-restaurant-info .fas{
+      color:transparent;
+      background-image: linear-gradient(to top,rgba(147,86,220,0.8), rgba(255,121,218,0.9));
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 1500ms ease;
+      opacity: 0;
+    }
+    .fas:hover{
+      opacity: 1;
+      transform:scale(1.2);
     }
  }
 }

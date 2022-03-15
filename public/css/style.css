@@ -358,16 +358,6 @@ body {
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-  /*
-  .card-restaurant-symbol-extra{
-    position: relative;
-     .far{
-       position: absolute;
-       top:15px;
-       left:15px;
-       height: 25px;
-     }
-  }*/
 }
 .template-home section.sections-restaurant .card-restaurant {
   display: flex;
@@ -401,10 +391,33 @@ body {
   object-fit: cover;
 }
 .template-home section.sections-restaurant .card-restaurant-info {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
+  position: relative;
   background-color: white;
+  padding-left: 10px;
+  border-radius: 0 0 25px 25px;
+}
+.template-home section.sections-restaurant .card-restaurant-info p {
+  padding-bottom: 15px;
+}
+.template-home section.sections-restaurant .card-restaurant-info h3 {
+  padding-top: 5px;
+}
+.template-home section.sections-restaurant .card-restaurant-info i {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+}
+.template-home section.sections-restaurant .card-restaurant-info .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 1500ms ease;
+  opacity: 0;
+}
+.template-home section.sections-restaurant .fas:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 footer {
@@ -423,32 +436,24 @@ footer .footer-list-proposer, footer .footer-list-devenir {
   gap: 15px;
 }
 
-button.commander:hover {
-  background: #fd9ce2;
-  background: linear-gradient(118deg, #fd9ce2 10%, #ac81e0 110%);
-  background: -webkit-linear-gradient(118deg, #fd9ce2 10%, #ac81e0 110%);
-  background: -moz-linear-gradient(118deg, #fd9ce2 10%, #ac81e0 110%);
-  border: none;
-  box-shadow: 0px 20px 10px 0px rgba(171, 163, 163, 0.73);
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(171, 163, 163, 0.73);
-  -moz-box-shadow: 0px 20px 10px 0px rgba(171, 163, 163, 0.73);
-}
-
 button.commander, button.explorez {
   display: block;
   padding: 12px;
   width: 42%;
+  border: none;
   border-radius: 20px;
   color: white;
   margin: 40px auto;
-  background: #ff79da;
-  background: linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-  background: -webkit-linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-  background: -moz-linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-  border: none;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.9));
   box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(171, 163, 163, 0.73);
   -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
+  transition: transform 2000ms;
+}
+
+button.explorez:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 @media (min-width: 760px) {
