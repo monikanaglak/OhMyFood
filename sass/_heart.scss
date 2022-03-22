@@ -1,0 +1,16 @@
+.restaurant-note .fas {
+    color: transparent;
+    background-image: linear-gradient(
+      to top,
+      rgba(147, 86, 220, 0.8),
+      rgba(255, 121, 218, 0.9)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 1500ms ease;
+    opacity: 0;
+  }
+  .restaurant-note .fas:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }

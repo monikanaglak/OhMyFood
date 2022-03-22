@@ -3,7 +3,7 @@ footer{
     flex-direction: column;
     gap:7px;
     background-color:$footer-color;
-    color:white;
+    color:$basic-color;
     padding: 20px;
     .footer-logo{
         font-family: $font-family;

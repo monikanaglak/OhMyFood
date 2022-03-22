@@ -2,7 +2,6 @@ body.template-restaurant {
   background-color: #f6f6f6;
   font-family: $font-family-text;
   margin: 0 auto;
-
   .hero-image {
     width: 100%;
     height: 220px;
@@ -24,31 +23,15 @@ body.template-restaurant {
     margin-top: -45px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: #f6f6f6;
+    background: $header-color-banner;
     .restaurant-titre h3 {
-      font-size: 30px;
+      font-size: 1.8rem;
       padding-top: 5px;
     }
     .restaurant-note i {
       position: absolute;
       top: 15px;
       right: 25px;
-    }
-    .restaurant-note .fas {
-      color: transparent;
-      background-image: linear-gradient(
-        to top,
-        rgba(147, 86, 220, 0.8),
-        rgba(255, 121, 218, 0.9)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      transition: all 1500ms ease;
-      opacity: 0;
-    }
-    .restaurant-note .fas:hover {
-      opacity: 1;
-      transform: scale(1.2);
     }
   }
   section > h3 {
@@ -64,73 +47,67 @@ body.template-restaurant {
     left: 0;
     content: "";
     height: 2px;
-    width: 40px;
+    width: 2.5rem;
     background-color: $tertaire-color;
   }
   main,
-  main div.restaurante{
+  main div.restaurante {
     display: flex;
     flex-direction: column;
   }
-  section.restaurants_menus{
+  section.restaurants_menus {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     gap: 10px;
 
-    .menuResto{
+    .menuResto {
       display: flex;
       margin: 10px;
-      background-color: white;
+      background-color: $basic-color;
       border-radius: 25px;
       max-width: 100%;
       overflow: hidden;
-      &_discription{
+      &_discription {
         display: flex;
         flex-direction: column;
         flex: 1;
         padding: 12px;
-        text-overflow: ellipsis;
         overflow: hidden;
+        text-overflow: ellipsis;
         white-space: nowrap;
-        p{
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-        }
       }
-      &:hover .animation-price{
+      &:hover .animation-price {
         margin-right: -0.5rem;
       }
+      &:hover .menuResto_price {
+        margin-right: 2rem;
+      }
       &_price {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      font-weight: bold;
-      margin-right: 15px;
-      padding: 12px;
-     }
-  }
-     .animation-price {
-      background-color: $tertaire-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 4rem;
-      margin-right: -4rem;
-      transition-duration: 0.5s;
-      .wrapper-icon {
-        width: 1.6rem;
-        height: 1.6rem;
-        border-radius: 50%;
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: bold;
+        margin-right: 15px;
+        padding: 12px;
+      }
+      .animation-price {
+        background-color: $tertaire-color;
+        display: flex;
         justify-content: center;
-        transform: rotate(360deg);
-        transition-duration: infinity;
+        align-items: center;
+        width: 4rem;
+        margin-right: -4rem;
+        transition-duration: 0.5s;
+        .wrapper-icon {
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
-    
   }
 }
-

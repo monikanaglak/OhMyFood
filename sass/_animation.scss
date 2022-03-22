@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disapeare 1s linear forwards 2s;
+  animation: disapeare 1s linear forwards 1s;
 }
 .loader{
   border: 16px solid #f3f3f3;
@@ -39,22 +39,25 @@ button.explorez:hover{
   transform: scale(1.1);
   opacity:0.8;
 }
-/* Animation apparition progressive*/
- .section-entres .entre, .section-plats .plats, .section-desserts .desserts{
-    animation: showing_Menu 2s ease 1s forwards;
-  }
-
-  @keyframes showing_Menu {
-    0% {
-      transform: translateY(50px);
-      opacity: 0%;
-    }
+div.menuResto_discription, .menuResto_price{
   
-    100% {
-      transform: translateY(0px);
-      opacity: 100%;
-    };
+  animation: monika 1s ease 1s 1 normal forwards;
+}
+@keyframes monika {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
   }
+  50% {
+    opacity: 0.5;
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 
   .template-home{
   /*animation: showingWebsite 5s linear 2s 1 forwards;*/

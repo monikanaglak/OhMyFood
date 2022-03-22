@@ -1,49 +1,50 @@
-@media  ( min-width:760px){
-    body.template-home{
-        max-width: 990px;
-        margin: 0 auto;
+/*@media (min-width: 760px) {
+  body.template-home {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  h4 {
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  header.accueil {
+    width: 100%;
+  }
+  main h2 {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+  .template-home div.choice-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5px;
+  }
+  .template-home div.section-btn {
+    width: 40%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    i {
+      display: none;
     }
-    h4{
-        font-size: 26px;
-        font-weight: bolder;
+  }
+  section.sections-restaurant > h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .template-home section.sections-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    div.card-restaurant {
+      width: 45vw;
+      height: 250px;
     }
-    header.accueil{
-        width:100%;
-    }
-    main h2{
-        display: block;
-        text-align: center;
-        letter-spacing: 1px;
-         padding:10px;
-    }
-    .template-home div.choice-buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-top: 5px;
-    }    
-     .template-home div.section-btn{
-            width: 40%;
-            justify-content: space-around;
-            flex-wrap: nowrap;
-                i{
-                    display: none;
-                }
-        }
-     section.sections-restaurant > h2{
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-    .template-home section.sections-restaurant {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width:100vw;
-        div.card-restaurant{
-            width: 45vw;
-            height: 250px;
-        }
-    }
-    }
+  }
+}
+*/
