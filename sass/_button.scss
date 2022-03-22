@@ -1,4 +1,4 @@
-button.commander, button.explorez {
+button.explorez {
     display: block;
     padding: 12px;
     width: 42%;
@@ -12,7 +12,5 @@ button.commander, button.explorez {
     -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
     transition: transform 2000ms;
   }
-  button.explorez:hover{
-    transform: scale(1.1);
-    opacity:0.8;
-  }
+
+ 

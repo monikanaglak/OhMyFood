@@ -1,18 +1,19 @@
-body.template-restaurant{
+body.template-restaurant {
   background-color: #f6f6f6;
   font-family: $font-family-text;
+  margin: 0 auto;
 
-.hero-image {
-  width: 100%;
-  height: 220px;
-  position: relative;
+  .hero-image {
+    width: 100%;
+    height: 220px;
+    position: relative;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-}
-div.titre-main {
+  }
+  div.titre-main {
     display: flex;
     justify-content: space-between;
     padding-left: 25px;
@@ -20,117 +21,116 @@ div.titre-main {
     width: 100%;
     position: relative;
     font-family: $font-family;
-    font-weight: 100;
-    margin-top: -50px;
+    margin-top: -45px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background: #f6f6f6;
-    h3 {
+    .restaurant-titre h3 {
       font-size: 30px;
-      padding-top: 10px;
+      padding-top: 5px;
     }
-    .far {
-      margin-top: 18px;
+    .restaurant-note i {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+    }
+    .restaurant-note .fas {
+      color: transparent;
+      background-image: linear-gradient(
+        to top,
+        rgba(147, 86, 220, 0.8),
+        rgba(255, 121, 218, 0.9)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 1500ms ease;
+      opacity: 0;
+    }
+    .restaurant-note .fas:hover {
+      opacity: 1;
+      transform: scale(1.2);
     }
   }
-
   section > h3 {
     text-transform: uppercase;
     position: relative;
     font-weight: 50;
     margin-left: 25px;
-    margin-top: 20px;
-    /*text-decoration: underline $tertaire-color 2px;*/
+    margin-top: 15px;
   }
   section > h3::after {
     position: absolute;
     bottom: -2px;
     left: 0;
     content: "";
-    height: 1px;
+    height: 2px;
     width: 40px;
     background-color: $tertaire-color;
   }
-  main, main div.menu {
+  main,
+  main div.restaurante{
     display: flex;
     flex-direction: column;
-    gap:8px;
   }
-  section.section-entres,section.section-plats,section.section-desserts{
+  section.restaurants_menus{
     display: flex;
     flex-direction: column;
-    gap:8px;
+    overflow: hidden;
+    gap: 10px;
+
+    .menuResto{
+      display: flex;
+      margin: 10px;
+      background-color: white;
+      border-radius: 25px;
+      max-width: 100%;
+      overflow: hidden;
+      &_discription{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        p{
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+      &:hover .animation-price{
+        margin-right: -0.5rem;
+      }
+      &_price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-weight: bold;
+      margin-right: 15px;
+      padding: 12px;
+     }
   }
-  .entre,.plats,.desserts{
-    display: flex;
-    justify-content: space-between;
-    width: 96%;
-    margin: 0 auto;
-    background-color:white;
-    border-radius: 25px;
-  }
-  
-   .entre-titre,.plat-titre,.dessert-titre{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-    flex:80%;
-    padding:10px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-  }
-  .entre-prix-special{
-    display: none;
-    background-color:green;
-  }
-   .entre-prix,.plat-prix,.dessert-prix{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 20%;
-    font-weight: bold;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    cursor: pointer;
-    p{
-      margin-top: 25px;
+     .animation-price {
+      background-color: $tertaire-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      margin-right: -4rem;
+      transition-duration: 0.5s;
+      .wrapper-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(360deg);
+        transition-duration: infinity;
+      }
     }
-  }
-  .entre-prix:hover{
     
-    animation:test 3s ease 3s;
-    transition:500ms linear;
-    .entre-prix-special{
-      display: block;
-    }
-  }
-@keyframes test {
-  0%{
-    transform: translateX(250px);
-    background-color:$tertaire-color;
-  }
-  100%{
-  transform: translateX(0px);
-    background-color:$tertaire-color;
   }
 }
-  
-  
-  .section-entres .entre, .section-plats .plats, .section-desserts.desserts{
-    animation: monika 2s ease 2s forwards;
-  }
-  @keyframes monika {
-    0% {
-      transform: translateY(50px);
-      opacity: 0%;
-    }
-  
-    100% {
-      transform: translateY(0px);
-      opacity: 100%;
-    }
-  }
-  
-  
-}
+

@@ -3,9 +3,6 @@
         max-width: 1400px;
         margin:0 auto;
     }
-    button.explorez{
-        width: 20%;
-    }
     section.choice-buttons{
         justify-content: space-between;
     }
@@ -13,22 +10,17 @@
         width: 30%;
         justify-content: space-around;
     }
-    .template-home main, footer, section.sections-restaurant{
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-    section.sections-restaurant > h2{
-        display: block;
-        text-align: center;
-        width: 100%;
-        padding:10px;
-    }
-
     .template-home section.sections-restaurant {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width:100%;
+            &>h2{
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding: 10px;
+            }
         div.card-restaurant{
             width: 22vw;
             height: 450px;

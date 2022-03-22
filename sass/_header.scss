@@ -4,15 +4,15 @@ header.accueil {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-color:$header-color-slogan;
+    background-color:$header-color-banner;
     .header-logo {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding:15px 0;
+      padding:1rem 0;
       background-color: white;
     }
-    .header-logo img {
+    & img {
       width: $width-logo;
       margin: 0 auto;
     }
@@ -20,8 +20,8 @@ header.accueil {
       display: flex;
       justify-content: center;
       width: 100%;
-      padding: 15px 0;
-      gap: 15px;
+      padding: 1rem 0;
+      gap: 1rem;
       background-color: $header-color;
       font-weight: 800;
     }
@@ -29,9 +29,9 @@ header.accueil {
       display: flex;
       flex-direction: column;
       padding:5px;
-      background-color: $header-color-slogan;
+      background-color: $header-color-banner;
       text-align: center;
-      padding-top: 20px;
+      padding-top: 1.5rem;
       width: 100%;
       p{
         font-weight: 250;
@@ -42,27 +42,4 @@ header.accueil {
       font-weight: 500;
       font-size:$htwo;
     }
-    /*.header-button{
-      display: flex;
-      justify-content: center;
-      background-color:$header-color-slogan;
-      width:100%;
-      padding-top: 20px;
-      padding-bottom: 30px;
-    }
-    button {
-        padding: 13px;
-        border-radius: 20px;
-        color:white;
-        width: 45%;
-        margin: 0 auto;
-        background: #ff79da;
-        background: linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-        background: -webkit-linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-        background: -moz-linear-gradient(118deg, #ff79da 10%, #9356dc 110%);
-        border: none;
-        box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(171, 163, 163, 0.73);
-        -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
-      }*/
 }

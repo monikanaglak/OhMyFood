@@ -2,9 +2,17 @@
     body.template-restaurant{
         max-width: 1400px;
         margin: 0 auto;
+            
+           main div.restaurante{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                
+            
             button.commander{
                  width: 20%;
-        
             }
+    
     }
 }
