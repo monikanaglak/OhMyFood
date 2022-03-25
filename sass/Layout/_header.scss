@@ -9,13 +9,15 @@ header.accueil {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding:1rem 0;
-      background-color: white;
-    }
-    & img {
+      padding:1rem;
+      background-color:$base-color;
+      box-shadow: 0 0.2rem 0.7rem 0.5px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+        img {
       width: $width-logo;
       margin: 0 auto;
     }
+  }
     .header-map {
       display: flex;
       justify-content: center;

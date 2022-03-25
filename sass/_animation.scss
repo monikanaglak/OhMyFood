@@ -1,5 +1,5 @@
 /*Animation loader*/
-
+/*animation-name, animation-duration,animation-timing-function,animation-delay,animation-direction,animation-count,animation-mode*/
 .loader-frame{
   width: 100vw; 
   height: 100vh; 
@@ -40,41 +40,45 @@ button.explorez:hover{
   opacity:0.8;
 }
 div.menuResto_discription, .menuResto_price{
-  
-  animation: monika 1s ease 1s 1 normal forwards;
+  animation: apparition 1s ease 1s 1 normal forwards;
 }
-@keyframes monika {
+@keyframes apparition {
   0% {
     opacity: 0;
     transform: translateY(100%);
-  }
-  50% {
-    opacity: 0.5;
-    
   }
   100% {
     opacity: 1;
     transform: translateY(0%);
   }
 }
-
-
   .template-home{
   /*animation: showingWebsite 5s linear 2s 1 forwards;*/
-  animation:showingWebsite 4s linear 2s forwards;
+  animation:showingWebsite 4s ease 1s 1 normal forwards;
   }
 
   @keyframes showingWebsite {
     0% {
       opacity: 0;
-      /*transform: translateY(1250px);*/
     }
-  
     100% {
       opacity: 1;
-      /*transform: translateY(0);*/
     }
   }
   a:hover{
     transform: scale(1.1);
   }
+  
+  .menuResto:hover i{
+    animation:rotate 1s ease 1 forwards;
+    
+   }
+  @keyframes rotate {
+    from{
+      -webkit-transform: rotate(0deg);
+    }
+    to{
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  

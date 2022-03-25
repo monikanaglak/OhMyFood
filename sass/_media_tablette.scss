@@ -1,4 +1,4 @@
-/*@media (min-width: 760px) {
+@media (min-width: 760px) {
   body.template-home {
     max-width: 990px;
     margin: 0 auto;
@@ -21,13 +21,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 5px;
-  }
-  .template-home div.section-btn {
-    width: 40%;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    i {
-      display: none;
+  
+      .section-btn {
+      width: 40%;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      i {
+        display: none;
+      }
     }
   }
   section.sections-restaurant > h2 {
@@ -46,5 +47,8 @@
       height: 250px;
     }
   }
+  button.explorez{
+    width: 25%;
+  }
 }
-*/
+
