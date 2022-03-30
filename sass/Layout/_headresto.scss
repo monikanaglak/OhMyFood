@@ -2,7 +2,10 @@ header.restaurant {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background-color:$basic-color;
+    .link-main-page{
+      padding-left: 10px;
+    }
     .header-logo {
       width: 100%;
       display: flex;
@@ -11,5 +14,6 @@ header.restaurant {
         img{
             width: $width-logo;
         }
+      
     }
 }

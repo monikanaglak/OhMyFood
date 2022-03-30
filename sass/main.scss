@@ -1,15 +1,14 @@
 
-@import "variables";
-@import "../sass/Layout/header";
-@import "../sass/Base/mainresto";
-@import "../sass/Layout/headresto";
-@import "../sass/Base/accueil";
-@import "../sass/Layout/footer";
-@import "animation";
-@import "../sass/Components/button";
-@import "../sass/Components/heart";
-@import "media_tablette";
-@import "media_desktop";
+@import "../sass/utils/variables";
+@import "../sass/layout/header";
+@import "../sass/templates/mainresto";
+@import "../sass/layout/headresto";
+@import "../sass/templates/accueil";
+@import "../sass/layout/footer";
+@import "../sass/utils/animation";
+@import "../sass/components/button";
+@import "../sass/components/heart";
+@import "../sass/layout/media_accueil";
 @import "../sass/Layout/media_resto";
 *{
     padding: 0;

@@ -11,7 +11,7 @@ header.accueil {
       justify-content: center;
       padding:1rem;
       background-color:$base-color;
-      box-shadow: 0 0.2rem 0.7rem 0.5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 5px -5px grey;
       z-index: 9999;
         img {
       width: $width-logo;
@@ -27,7 +27,7 @@ header.accueil {
       background-color: $header-color;
       font-weight: 800;
     }
-    .header-publicite, .header-information {
+    .header-pub, .header-information {
       display: flex;
       flex-direction: column;
       padding:5px;
@@ -39,7 +39,7 @@ header.accueil {
         font-weight: 250;
       }
     }
-    .header-publicite h2{
+    .header-pub h2{
       font-family: 'Roboto';
       font-weight: 500;
       font-size:$htwo;

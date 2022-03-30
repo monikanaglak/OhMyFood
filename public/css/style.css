@@ -11,7 +11,7 @@ header.accueil .header-logo {
   justify-content: center;
   padding: 1rem;
   background-color: white;
-  box-shadow: 0 0.2rem 0.7rem 0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 5px -5px grey;
   z-index: 9999;
 }
 header.accueil .header-logo img {
@@ -27,7 +27,7 @@ header.accueil .header-map {
   background-color: #eaeaea;
   font-weight: 800;
 }
-header.accueil .header-publicite, header.accueil .header-information {
+header.accueil .header-pub, header.accueil .header-information {
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -36,10 +36,10 @@ header.accueil .header-publicite, header.accueil .header-information {
   padding-top: 1.5rem;
   width: 100%;
 }
-header.accueil .header-publicite p, header.accueil .header-information p {
+header.accueil .header-pub p, header.accueil .header-information p {
   font-weight: 250;
 }
-header.accueil .header-publicite h2 {
+header.accueil .header-pub h2 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 24px;
@@ -60,7 +60,7 @@ body.template-restaurant .hero-image img {
   height: 100%;
   object-fit: cover;
 }
-body.template-restaurant div.titre-main {
+body.template-restaurant div.main-title {
   display: flex;
   justify-content: space-between;
   padding-left: 25px;
@@ -73,11 +73,11 @@ body.template-restaurant div.titre-main {
   border-top-right-radius: 30px;
   background: #f6f6f6;
 }
-body.template-restaurant div.titre-main .restaurant-titre h3 {
+body.template-restaurant div.main-title .restaurant-titre h3 {
   font-size: 1.8rem;
   padding-top: 5px;
 }
-body.template-restaurant div.titre-main .restaurant-note i {
+body.template-restaurant div.main-title .restaurant-note i {
   position: absolute;
   top: 15px;
   right: 25px;
@@ -117,40 +117,41 @@ body.template-restaurant section.restaurants_menus .menuResto {
   max-width: 100%;
   overflow: hidden;
 }
-body.template-restaurant section.restaurants_menus .menuResto_discription {
+body.template-restaurant section.restaurants_menus .menuResto_description {
   display: flex;
-  flex: 1;
+  transition-duration: 0.5s;
   flex-direction: column;
   padding: 12px;
+  width: calc(100% - 80px);
 }
-body.template-restaurant section.restaurants_menus .menuResto_discription h3, body.template-restaurant section.restaurants_menus .menuResto_discription p {
+body.template-restaurant section.restaurants_menus .menuResto_description h3,
+body.template-restaurant section.restaurants_menus .menuResto_description p {
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
   white-space: nowrap;
-  width: calc(100% - 6rem);
-  border: 2px solid magenta;
+}
+body.template-restaurant section.restaurants_menus .menuResto:hover .menuResto_description {
+  width: calc(100% - 140px);
 }
 body.template-restaurant section.restaurants_menus .menuResto:hover .animation-price {
-  margin-right: -0.5rem;
-}
-body.template-restaurant section.restaurants_menus .menuResto:hover .menuResto_price {
-  margin-right: 2rem;
+  margin-right: 0;
 }
 body.template-restaurant section.restaurants_menus .menuResto_price {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   font-weight: bold;
-  margin-right: 15px;
-  padding: 12px;
+  width: 80px;
+  padding: 12px 20px;
 }
 body.template-restaurant section.restaurants_menus .menuResto .animation-price {
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  margin-right: -4rem;
+  width: 60px;
+  margin-right: -60px;
   transition-duration: 0.5s;
 }
 body.template-restaurant section.restaurants_menus .menuResto .animation-price .wrapper-icon {
@@ -159,14 +160,21 @@ body.template-restaurant section.restaurants_menus .menuResto .animation-price .
   border-radius: 50%;
   display: flex;
   align-items: center;
+  background-color: #ffff;
   justify-content: center;
+}
+body.template-restaurant section.restaurants_menus .menuResto .animation-price .wrapper-icon i {
+  color: #99e2d0;
 }
 
 header.restaurant {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background-color: #ffff;
+}
+header.restaurant .link-main-page {
+  padding-left: 10px;
 }
 header.restaurant .header-logo {
   width: 100%;
@@ -210,7 +218,7 @@ header.restaurant .header-logo img {
   padding: 1.2rem;
   gap: 1.2rem;
 }
-.template-home .choice-buttons .section-btn {
+.template-home .choice-buttons .main-btn {
   display: flex;
   position: relative;
   width: 95%;
@@ -220,16 +228,16 @@ header.restaurant .header-logo img {
   border-radius: 20px;
   background-color: #f6f6f6;
   border: none;
-  box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(171, 163, 163, 0.73);
-  -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
+  box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
+  -webkit-box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
+  -moz-box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
   transition: transform 1000ms;
 }
-.template-home .choice-buttons .section-btn:hover {
+.template-home .choice-buttons .main-btn:hover {
   background-image: linear-gradient(to top, rgba(247, 117, 240, 0.8), rgba(247, 177, 227, 0.9));
   transform: scale(1.03);
 }
-.template-home .choice-buttons .section-btn span {
+.template-home .choice-buttons .main-btn span {
   position: absolute;
   top: 12px;
   left: -10px;
@@ -241,7 +249,7 @@ header.restaurant .header-logo img {
   line-height: 25px;
   color: #ffff;
 }
-.template-home .choice-buttons .section-btn .fas {
+.template-home .choice-buttons .main-btn .fas {
   width: 20px;
   padding-top: 2px;
   margin-right: 20px;
@@ -298,7 +306,7 @@ header.restaurant .header-logo img {
 .template-home section.sections-restaurant .card-restaurant-name {
   padding: 10px;
 }
-.template-home section.sections-restaurant .card-restaurant-note i {
+.template-home section.sections-restaurant .card-restaurant-grade i {
   position: absolute;
   top: 10px;
   right: 25px;
@@ -331,13 +339,15 @@ footer .footer-list-proposer, footer .footer-list-devenir {
   display: flex;
   gap: 15px;
 }
+footer .footer-contact p a {
+  color: #ffff;
+}
 
 /*Animation loader*/
-/*animation-name, animation-duration,animation-timing-function,animation-delay,animation-direction,animation-count,animation-mode*/
 .loader-frame {
   width: 100vw;
   height: 100vh;
-  background: #fff;
+  background: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -345,14 +355,14 @@ footer .footer-list-proposer, footer .footer-list-devenir {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disapeare 1s linear forwards 1s;
+  animation: disapeare 1s linear forwards 2s;
 }
 
 .loader {
   border: 16px solid #f3f3f3;
   top: 100px;
   border-radius: 50%;
-  border-top: 16px solid #161616;
+  border-top: 16px solid black;
   width: 100px;
   height: 100px;
   animation: spin 1s linear infinite;
@@ -375,12 +385,12 @@ footer .footer-list-proposer, footer .footer-list-devenir {
     z-index: -1;
   }
 }
-button.explorez:hover {
+button.explore:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
 
-div.menuResto_discription, .menuResto_price {
+.delay-1 {
   animation: apparition 1s ease 1s 1 normal forwards;
 }
 
@@ -394,17 +404,26 @@ div.menuResto_discription, .menuResto_price {
     transform: translateY(0%);
   }
 }
+.delay-2 {
+  animation: apparition 2s ease 1s 1 normal forwards;
+}
+
+.delay-3 {
+  animation: apparition 3s ease 1s 1 normal forwards;
+}
+
 .template-home {
-  /*animation: showingWebsite 5s linear 2s 1 forwards;*/
-  animation: showingWebsite 4s ease 1s 1 normal forwards;
+  animation: showingWebsite 5s linear 2s 1 forwards;
 }
 
 @keyframes showingWebsite {
   0% {
     opacity: 0;
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
+    transform: translateY(0%);
   }
 }
 a:hover {
@@ -423,7 +442,7 @@ a:hover {
     -webkit-transform: rotate(360deg);
   }
 }
-button.explorez {
+button.explore {
   display: block;
   padding: 12px;
   width: 42%;
@@ -452,7 +471,7 @@ button.explorez {
   transform: scale(1.2);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   body.template-home {
     max-width: 990px;
     margin: 0 auto;
@@ -461,10 +480,6 @@ button.explorez {
   h4 {
     font-size: 26px;
     font-weight: bolder;
-  }
-
-  header.accueil {
-    width: 100%;
   }
 
   main h2 {
@@ -480,12 +495,12 @@ button.explorez {
     justify-content: space-evenly;
     padding-top: 5px;
   }
-  .template-home div.choice-buttons .section-btn {
+  .template-home div.choice-buttons .main-btn {
     width: 40%;
     justify-content: space-around;
     flex-wrap: nowrap;
   }
-  .template-home div.choice-buttons .section-btn i {
+  .template-home div.choice-buttons .main-btn i {
     display: none;
   }
 
@@ -507,7 +522,7 @@ button.explorez {
     height: 250px;
   }
 
-  button.explorez {
+  button.explore {
     width: 25%;
   }
 }
@@ -526,7 +541,7 @@ button.explorez {
     justify-content: space-around;
   }
 
-  button.explorez {
+  button.explore {
     width: 25%;
   }
 
@@ -555,13 +570,6 @@ button.explorez {
   body.template-restaurant {
     max-width: 990px;
     margin: 0 auto;
-    /*div.entre-prix {
-      margin-left: 55px;
-      background-color:red;
-      p {
-        padding-left: 60px;
-      }
-    }*/
   }
   body.template-restaurant .hero-image {
     height: 350px;

@@ -1,4 +1,4 @@
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-tablette) {
   body.template-restaurant {
     max-width: 990px;
     margin: 0 auto;
@@ -8,13 +8,6 @@
     button.commander {
       width: 30%;
     }
-    /*div.entre-prix {
-      margin-left: 55px;
-      background-color:red;
-      p {
-        padding-left: 60px;
-      }
-    }*/
   }
 }
 

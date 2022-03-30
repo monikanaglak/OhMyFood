@@ -30,7 +30,7 @@
     margin-top: 1.2rem;
     padding:1.2rem;
     gap:1.2rem;
-    .section-btn {
+    .main-btn {
       display: flex;
       position: relative;
       width: 95%;
@@ -40,9 +40,9 @@
       border-radius: 20px;
       background-color: #f6f6f6;
       border: none;
-      box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
-      -webkit-box-shadow: 0px 5px 5px 0px rgba(171, 163, 163, 0.73);
-      -moz-box-shadow: 0px 10px 5px 0px rgba(171, 163, 163, 0.73);
+      box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
+      -webkit-box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
+      -moz-box-shadow: 0px 8px 2px -2px rgba(171, 163, 163, 0.73);
       transition: transform 1000ms;
       &:hover{
         background-image: linear-gradient(to top,rgba(247, 117, 240, 0.8), rgba(247, 177, 227, 0.9));
@@ -119,7 +119,7 @@
     .card-restaurant-name{
       padding: 10px;
     }
-    .card-restaurant-note i{
+    .card-restaurant-grade i{
       position: absolute;
       top: 10px;
       right: 25px;

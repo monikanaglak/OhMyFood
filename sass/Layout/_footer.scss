@@ -12,4 +12,7 @@ footer{
         display: flex;
         gap:15px;
     }
+    .footer-contact p a{
+        color:$basic-color;
+    }
 }

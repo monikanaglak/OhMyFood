@@ -1,23 +1,22 @@
 /*Animation loader*/
-/*animation-name, animation-duration,animation-timing-function,animation-delay,animation-direction,animation-count,animation-mode*/
 .loader-frame{
-  width: 100vw; 
-  height: 100vh; 
-  background:#fff;
+  width: 100vw;
+  height: 100vh;
+  background:$base-color;
   position: fixed; 
   top:0;
   left:0;
-  z-index: 999999; 
+  z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disapeare 1s linear forwards 1s;
+  animation: disapeare 1s linear forwards 2s;
 }
 .loader{
   border: 16px solid #f3f3f3;
   top:100px;
   border-radius: 50%;
-  border-top: 16px solid #161616;
+  border-top: 16px solid black;
   width: 100px;
   height:100px;
   animation: spin 1s linear infinite;
@@ -35,13 +34,15 @@
     z-index: -1;
   }
 }
-button.explorez:hover{
+button.explore:hover{
   transform: scale(1.1);
   opacity:0.8;
 }
-div.menuResto_discription, .menuResto_price{
-  animation: apparition 1s ease 1s 1 normal forwards;
+
+ .delay-1{
+  animation:apparition 1s ease 1s 1 normal forwards;
 }
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -52,17 +53,26 @@ div.menuResto_discription, .menuResto_price{
     transform: translateY(0%);
   }
 }
-  .template-home{
-  /*animation: showingWebsite 5s linear 2s 1 forwards;*/
-  animation:showingWebsite 4s ease 1s 1 normal forwards;
+.delay-2{
+  animation:apparition 2s ease 1s 1 normal forwards;
+}
+
+.delay-3{
+  animation:apparition 3s ease 1s 1 normal forwards;
+}
+
+.template-home{
+  animation: showingWebsite 5s linear 2s 1 forwards;
   }
 
   @keyframes showingWebsite {
     0% {
       opacity: 0;
+      transform: translateY(100%);
     }
     100% {
       opacity: 1;
+      transform: translateY(0%);
     }
   }
   a:hover{
