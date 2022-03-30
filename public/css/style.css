@@ -108,6 +108,8 @@ body.template-restaurant section.restaurants_menus {
   flex-direction: column;
   overflow: hidden;
   gap: 10px;
+  opacity: 0;
+  transform: translateY(100%);
 }
 body.template-restaurant section.restaurants_menus .menuResto {
   display: flex;
@@ -390,8 +392,17 @@ button.explore:hover {
   opacity: 0.8;
 }
 
+/*animation apparition progressive*/
 .delay-1 {
   animation: apparition 1s ease 1s 1 normal forwards;
+}
+
+.delay-2 {
+  animation: apparition 1s ease 2s 1 normal forwards;
+}
+
+.delay-3 {
+  animation: apparition 1s ease 3s 1 normal forwards;
 }
 
 @keyframes apparition {
@@ -404,16 +415,9 @@ button.explore:hover {
     transform: translateY(0%);
   }
 }
-.delay-2 {
-  animation: apparition 2s ease 1s 1 normal forwards;
-}
-
-.delay-3 {
-  animation: apparition 3s ease 1s 1 normal forwards;
-}
-
+/*apparition site */
 .template-home {
-  animation: showingWebsite 5s linear 2s 1 forwards;
+  animation: showingWebsite 4s linear 2s 1 forwards;
 }
 
 @keyframes showingWebsite {
@@ -426,10 +430,12 @@ button.explore:hover {
     transform: translateY(0%);
   }
 }
+/*agrandisement cards*/
 a:hover {
   transform: scale(1.1);
 }
 
+/*rotation petit cochet*/
 .menuResto:hover i {
   animation: rotate 1s ease 1 forwards;
 }

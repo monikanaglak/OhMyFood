@@ -61,6 +61,8 @@ body.template-restaurant {
     flex-direction: column;
     overflow: hidden;
     gap: 10px;
+    opacity: 0;
+    transform: translateY(100%);
 
     .menuResto {
       display: flex;
