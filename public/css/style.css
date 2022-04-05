@@ -344,6 +344,9 @@ footer .footer-list-proposer, footer .footer-list-devenir {
 footer .footer-contact p a {
   color: #ffff;
 }
+footer a {
+  text-decoration: none;
+}
 
 /*Animation loader*/
 .loader-frame {
