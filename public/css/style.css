@@ -366,8 +366,9 @@ footer a {
 .loader {
   border: 16px solid #f3f3f3;
   top: 100px;
+  border: 8px solid #99e2d0;
   border-radius: 50%;
-  border-top: 16px solid black;
+  border-top: 8px solid #9356dc;
   width: 100px;
   height: 100px;
   animation: spin 1s linear infinite;

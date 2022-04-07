@@ -15,8 +15,9 @@
 .loader{
   border: 16px solid #f3f3f3;
   top:100px;
+  border:8px solid $tertaire-color;
   border-radius: 50%;
-  border-top: 16px solid black;
+  border-top: 8px solid $primary-color;
   width: 100px;
   height:100px;
   animation: spin 1s linear infinite;
