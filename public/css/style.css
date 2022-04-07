@@ -27,7 +27,7 @@ header.accueil .header-map {
   background-color: #eaeaea;
   font-weight: 800;
 }
-header.accueil .header-pub, header.accueil .header-information {
+header.accueil .header-publicite, header.accueil .header-information {
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -36,13 +36,8 @@ header.accueil .header-pub, header.accueil .header-information {
   padding-top: 1.5rem;
   width: 100%;
 }
-header.accueil .header-pub p, header.accueil .header-information p {
-  font-weight: 300;
-}
-header.accueil .header-pub h2 {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 24px;
+header.accueil .header-publicite p, header.accueil .header-information p {
+  font-weight: 150;
 }
 
 body.template-restaurant {
@@ -191,9 +186,6 @@ header.restaurant .header-logo img {
 .template-home header, .template-home main, .template-home footer {
   margin: 0 auto;
   font-family: "Roboto";
-}
-.template-home h2 {
-  font-size: 24px;
 }
 .template-home p {
   font-size: 16px;
@@ -360,7 +352,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disapeare 1s linear forwards 2s;
+  animation: disappear 1s linear forwards 2s;
 }
 
 .loader {
@@ -382,7 +374,7 @@ footer a {
     transform: rotate(360deg);
   }
 }
-@keyframes disapeare {
+@keyframes disappear {
   0% {
     opacity: 100%;
   }

@@ -27,7 +27,7 @@ header.accueil {
       background-color: $header-color;
       font-weight: 800;
     }
-    .header-pub, .header-information {
+    .header-publicite,.header-information {
       display: flex;
       flex-direction: column;
       padding:5px;
@@ -36,12 +36,8 @@ header.accueil {
       padding-top: 1.5rem;
       width: 100%;
       p{
-        font-weight: 300;
+        font-weight:150;
       }
     }
-    .header-pub h2{
-      font-family: 'Roboto';
-      font-weight: 500;
-      font-size:$htwo;
-    }
+   
 }
